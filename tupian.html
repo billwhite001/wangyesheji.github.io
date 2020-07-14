@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+	body{background: #AAFFF4}
+	h1{text-align: center}
+	</style>
+</head>
+
+<body><h1>摄影作品</h1><a href="个人网站.html" ><img src="敌方4de71baacf8d6c7a6694b18c.png" width="100"></a>
+	<img src="1.jpg" height="500" id="imgid" style="display: block;margin: auto">
+</body>
+	<script type="text/javascript">
+	window.onload =
+		setInterval(step,3000);
+		var num = 1;
+		function step(){
+			if (num<4){
+				num++;
+			}else{
+				num = 1;
+			}
+			var dom = document.getElementById("imgid");
+			dom.src=num+'.jpg';
+		}
+	</script>
+</html>
